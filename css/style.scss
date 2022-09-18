@@ -1,0 +1,124 @@
+@use "sass:math";
+
+@import url("/fonts/stylesheet.css");
+@import url("/css/nullstyle.css");
+
+@function rem($px){
+    $result: math.div($px, 18) + rem;
+    @return $result;
+}
+
+body, html {
+    font-family: 'Akrobat';
+    font-weight: 600;
+    font-size: rem(24);
+    color: #000;
+}
+._contaier {
+}
+.header {
+    
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+    }
+
+    &__menu {
+    }
+}
+.menu {
+    font-weight: 400;
+}
+.header-menu {
+    height: rem(120);
+    &__list {
+        height: 100%;
+        display: flex;
+        column-gap: rem(50);
+        align-items: center;
+    }
+
+    &__link {
+        position: relative;
+        &:hover{
+            &::before{
+                content: '';
+                width: 103%;
+                height: 3px;
+                background-color: red;
+                position: absolute;
+                bottom: -15px;
+                left: 0;
+            }
+        }
+        &._active{
+            color: #FF0000;
+        }
+    }
+}
+
+.main-page {
+
+    &__body {
+    }
+
+    &__container {
+    }
+
+    &__information {
+    }
+
+    &__title {
+    }
+
+    &__action {
+    }
+
+    &__button {
+    }
+
+    &__subtitle {
+    }
+
+    &__img {
+    }
+
+    &__footer {
+    }
+}
+.information {
+}
+.title {
+    text-transform: uppercase;
+}
+.button {
+}
+.subtitle {
+}
+.footer {
+
+    &__copyright {
+    }
+
+    &__menu {
+    }
+
+    &__social {
+    }
+
+    &__social-icon {
+    }
+}
+.footer-menu {
+
+    &__list {
+    }
+
+    &__link {
+    }
+}
