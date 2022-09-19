@@ -8,57 +8,72 @@
     <title>Toy.Stream - мобильные игры</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header__container _contaier">
-            <a class="header__logo" href="">
-                <img src="img/logo.svg" class="header__logo-img" alt="картинка не загрузилась :(">
-            </a>
-            <nav class="header__menu header-menu menu">
-                <ul class="header-menu__list">
-                    <li class="header-menu__link _active"><a href="">Главная</a></li>
-                    <li class="header-menu__link"><a href="">О Компании</a></li>
-                    <li class="header-menu__link"><a href="">Игры</a></li>
-                    <li class="header-menu__link"><a href="">Карьера</a></li>
-                    <li class="header-menu__link"><a href="">Новости</a></li>
-                    <li class="header-menu__link"><a href="">Контакты</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <section class="main-page__body">
-        <div class="main-page__container _contaier">
-            <article class="main-page__information information">
-                <h1 class="main-page__title title">Мы создаем мобильные игры, в которые ты играешь</h1>
-                <div class="main-page__action">
-                    <div class="main-page__button button">Узнать подробнее</div>
-                    <p class="main-page__subtitle subtitle">«Оригинальные идеи, качество реализации игровых механик и внимание к деталям интерфейса - наши основные принципы.»</p>
-                </div>
-            </article>
-            <div class="main-page__img">
-                <img src="img/main-page__bg.png" alt="картинка не загрузилась :(">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container _container">
+                <a class="header__logo" href="">
+                    <img src="img/logo.svg" class="header__logo-img" alt="картинка не загрузилась :(">
+                </a>
+                <nav class="header__menu header-menu menu">
+                    <ul class="header-menu__list">
+                        <li class="header-menu__link _active"><a href="">Главная</a></li>
+                        <li class="header-menu__link"><a href="">Компания</a></li>
+                        <li class="header-menu__link"><a href="">Игры</a></li>
+                        <li class="header-menu__link"><a href="">Карьера</a></li>
+                        <li class="header-menu__link"><a href="">Новости</a></li>
+                        <li class="header-menu__link"><a href="">Контакты</a></li>
+                    </ul>
+                </nav>
             </div>
-        </div>
-    </section>
-    <footer class="main-page__footer footer">
-        <p class="footer__copyright"></p>
-        <nav class="footer__menu footer-menu">
-            <ul class="footer-menu__list">
-                <li class="footer-menu__link"><a href="">Главная</a></li>
-                <li class="footer-menu__link"><a href="">О Компании</a></li>
-                <li class="footer-menu__link"><a href="">Игры</a></li>
-                <li class="footer-menu__link"><a href="">Карьера</a></li>
-                <li class="footer-menu__link"><a href="">Новости</a></li>
-                <li class="footer-menu__link"><a href="">Контакты</a></li>
-            </ul>
-        </nav>
-        <div class="footer__social">
-           <a class="footer__social-icon" href=""><img src="img/footer/Behance.svg" alt=""></a>
-           <a class="footer__social-icon" href=""><img src="img/footer/Dribbble.svg" alt=""></a>
-           <a class="footer__social-icon" href=""><img src="img/footer/Snapchat.svg" alt=""></a>
-           <a class="footer__social-icon" href=""><img src="img/footer/Pintrest.svg" alt=""></a>
-           <a class="footer__social-icon" href=""><img src="img/footer/Linkedin.svg" alt=""></a>
-           <a class="footer__social-icon" href=""><img src="img/footer/Facebook.svg" alt=""></a>
-        </div>
-    </footer>
+        </header>
+        <section class="main-page">
+            <div class="main-page__container _container">
+                <article class="main-page__information information">
+                    <h1 class="main-page__title title">Мы создаем мобильные игры, в которые ты играешь</h1>
+                    <div class="main-page__action">
+                        <div class="main-page__social">
+                            <a class="main-page__social-icon" href=""><img src="img/footer/Behance.svg" alt=""></a>
+                            <a class="main-page__social-icon" href=""><img src="img/footer/Dribbble.svg" alt=""></a>
+                            <a class="main-page__social-icon" href=""><img src="img/footer/Snapchat.svg" alt=""></a>
+                            <a class="main-page__social-icon" href=""><img src="img/footer/Pintrest.svg" alt=""></a>
+                            <a class="main-page__social-icon" href=""><img src="img/footer/Linkedin.svg" alt=""></a>
+                            <a class="main-page__social-icon" href=""><img src="img/footer/Facebook.svg" alt=""></a>
+                        </div>
+                        <a href="" class="main-page__button button">
+                            <span class="main-page__button-text button-text">Узнать подробнее</span>
+                            <img class="main-page__button-arrow" src="img/arrow-r.svg" alt="">
+                        </a>
+                        <p class="main-page__subtitle subtitle">«Оригинальные идеи, качество реализации игровых механик и внимание к деталям интерфейса - наши основные принципы.»</p>
+                    </div>
+                </article>
+                <div class="main-page__img">
+                    <div class="main-page__background"></div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__container _container">
+                <p class="footer__copyright">© Toy.Stream, Inc.</p>
+                <nav class="footer__menu footer-menu">
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__link"><a href="">Главная</a></li>
+                        <li class="footer-menu__link"><a href="">О Компании</a></li>
+                        <li class="footer-menu__link"><a href="">Игры</a></li>
+                        <li class="footer-menu__link"><a href="">Карьера</a></li>
+                        <li class="footer-menu__link"><a href="">Новости</a></li>
+                        <li class="footer-menu__link"><a href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__social">
+                    <a class="footer__social-icon" href=""><img src="img/footer/Behance.svg" alt=""></a>
+                    <a class="footer__social-icon" href=""><img src="img/footer/Dribbble.svg" alt=""></a>
+                    <a class="footer__social-icon" href=""><img src="img/footer/Snapchat.svg" alt=""></a>
+                    <a class="footer__social-icon" href=""><img src="img/footer/Pintrest.svg" alt=""></a>
+                    <a class="footer__social-icon" href=""><img src="img/footer/Linkedin.svg" alt=""></a>
+                    <a class="footer__social-icon" href=""><img src="img/footer/Facebook.svg" alt=""></a>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

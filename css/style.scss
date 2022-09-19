@@ -4,7 +4,7 @@
 @import url("/css/nullstyle.css");
 
 @function rem($px){
-    $result: math.div($px, 18) + rem;
+    $result: math.div($px, 21) + rem;
     @return $result;
 }
 
@@ -12,15 +12,23 @@ body, html {
     font-family: 'Akrobat';
     font-weight: 600;
     font-size: rem(24);
+    
     color: #000;
 }
-._contaier {
+.wrapper{
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+._container {
+    padding: 0 15px;
 }
 .header {
-    
     &__container {
         display: flex;
         justify-content: space-between;
+        height: 100px;
     }
 
     &__logo {
@@ -35,15 +43,15 @@ body, html {
     font-weight: 400;
 }
 .header-menu {
-    height: rem(120);
+    
     &__list {
         height: 100%;
         display: flex;
-        column-gap: rem(50);
         align-items: center;
     }
 
     &__link {
+        margin-right: rem(100);
         position: relative;
         &:hover{
             &::before{
@@ -63,45 +71,106 @@ body, html {
 }
 
 .main-page {
-
-    &__body {
-    }
-
+    flex: 1 1 auto;
+    height: 100%;
     &__container {
+        display: flex;
+        height: 100%;
     }
 
     &__information {
+        padding-top: 100px;
+        flex: 0 0 60%;
     }
 
     &__title {
     }
 
     &__action {
+        padding-top: 50px;
+        display: flex;
+        column-gap: 60px;
     }
 
     &__button {
+        &:hover {
+            .main-page__button-arrow{
+                transform: translate(-3px,0);
+            }
+        }
+        &-arrow{
+            transition: 0.2s transform ease-in-out;
+            margin-top: 6px;
+        }
     }
+    
 
     &__subtitle {
     }
 
     &__img {
+        flex: 1 1 auto;
+        background: url('../img/main-page__bg.png') 0 0 / contain no-repeat;
+        
     }
-
+    &__background{
+        background-color: #FFEA2F;
+        position: absolute;
+        width: 80%;
+        height: 100%;
+        z-index: -5;
+        top: 0;
+        right: 0;
+    }
+    &__social{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    &__social-icon{
+    }
     &__footer {
     }
 }
 .information {
+    height: 100%;
 }
 .title {
+    font-size: rem(72);
     text-transform: uppercase;
 }
 .button {
+    &:hover{
+    }
+    font-size: rem(22);
+    line-height: rem(27);
+    font-weight: 800;
+    color: #fff;
+    width: 120px;
+    height: 120px;
+    background-color: #CE0002;
+    padding: 34px 15px 15px 15px;
+    transition: 0.2s background-color ease;
+    &:hover{
+        background-color: #FE0002;
+    }
+    &-text{
+    }
 }
 .subtitle {
 }
 .footer {
-
+    &__container {
+        font-size: rem(16);
+        font-weight: 500;
+        background-color: #EFEFEF;
+        color: #7E7E7E;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    
     &__copyright {
     }
 
@@ -113,12 +182,15 @@ body, html {
 
     &__social-icon {
     }
-}
-.footer-menu {
-
-    &__list {
+    &-menu {
+    
+        &__list {
+            display: flex;
+        }
+    
+        &__link {
+            margin: 0 30px;
+        }
     }
-
-    &__link {
-    }
 }
+
