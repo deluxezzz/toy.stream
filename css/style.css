@@ -1,5 +1,5 @@
-@import url("/fonts/stylesheet.css");
-@import url("/css/nullstyle.css");
+@import url("../fonts/stylesheet.css");
+@import url("nullstyle.css");
 body, html {
   font-family: "Akrobat";
   font-weight: 600;
